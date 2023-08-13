@@ -33,4 +33,5 @@ Servidor para a aplicação Super Drinks
 - [x] Criar modelo de ingrediente
 - [x] Rotas de drinks
 - [ ] Rotas de ingredientes
+- [ ] Conectar com banco de dados
 - [ ] Docker

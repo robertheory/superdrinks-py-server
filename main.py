@@ -1,6 +1,30 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import shortuuid
+import sqlite3
+
+connection = sqlite3.connect("./db/db.sqlite3")
+cursor = connection.cursor()
+
+# create superdrinks database
+
+cursor.execute("CREATE DATABASE IF NOT EXISTS superdrinks")
+
+# define default database
+
+cursor.execute("USE superdrinks")
+
+# define default schema
+
+cursor.execute("USE SCHEMA superdrinks")
+
+cursor.execute(
+    "CREATE TABLE IF NOT EXISTS drinks (id TEXT PRIMARY KEY, name TEXT, description TEXT, prepare_method TEXT)")
+cursor.execute(
+    "CREATE TABLE IF NOT EXISTS ingredients (id TEXT PRIMARY KEY, name TEXT, quantity REAL, prepare TEXT, description TEXT, unit TEXT, drink_id TEXT, FOREIGN KEY(drink_id) REFERENCES drinks(id))")
+
+connection.commit()
+connection.close()
 
 
 class Ingredient(BaseModel):

@@ -16,15 +16,31 @@ Servidor para a aplicação Super Drinks
    ```sh
    git clone git@github.com:robertheory/superdrinks-py-server.git
    ```
-2. Crie um ambiente virtual
-3. Instale as dependências
+2. Acesse o diretório do projeto
+   ```sh
+   cd superdrinks-py-server
+   ```
+3. Crie um ambiente virtual
+   ```sh
+   python -m venv venv
+   ```
+4. Ative o ambiente virtual
+   ```sh
+   source venv/bin/activate
+   ```
+5. Instale as dependências
    ```sh
    pip install -r requirements.txt
    ```
-4. Execute o servidor
-5. Acesse o servidor em http://localhost:8000
-6. Acesse a documentação da API em http://localhost:8000/docs
-7. Acesse a documentação interativa da API em http://localhost:8000/redoc
+6. Execute o servidor
+
+   ```sh
+   uvicorn main:app --reload
+   ```
+
+7. Acesse o servidor em http://localhost:8000
+8. Acesse a documentação da API em http://localhost:8000/docs
+9. Acesse a documentação interativa da API em http://localhost:8000/redoc
 
 ## Roadmap
 

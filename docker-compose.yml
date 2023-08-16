@@ -11,17 +11,5 @@ services:
     ports:
       - '8000:8000'
     restart: always
-    depends_on:
-      - sqlite3
-
-  sqlite3:
-    container_name: database
-    image: nouchka/sqlite3:latest
-    stdin_open: true
-    tty: true
     volumes:
-      #Modify following line
-      - ./db:/root/db/
-    ports:
-      - '9000:9000' # expose ports - HOST:CONTAINER
-    restart: unless-stopped
+      - ./app:/app

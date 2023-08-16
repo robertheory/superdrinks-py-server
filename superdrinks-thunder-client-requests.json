@@ -1,0 +1,132 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Superdrinks",
+    "dateExported": "2023-08-16T03:43:03.381Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "7364e83e-5ee7-486e-bfb4-02fb433d17f6",
+            "name": "DRINKS",
+            "containerId": "",
+            "created": "2023-08-16T03:39:18.018Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "9e5cd52f-cc6a-4297-84f2-8ee686e73772",
+            "name": "INGREDIENTS",
+            "containerId": "",
+            "created": "2023-08-16T03:39:26.750Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "fdb156e8-ccde-47ae-a1c2-9d3e82e35dbc",
+            "colId": "e7a5fd06-1c27-49cd-b61c-6e03d26c97ec",
+            "containerId": "",
+            "name": "Hello World",
+            "url": "http://localhost:8000/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-16T03:32:55.245Z",
+            "modified": "2023-08-16T03:32:55.245Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "895f3066-ac16-4055-8b81-28e9fa4279de",
+            "colId": "e7a5fd06-1c27-49cd-b61c-6e03d26c97ec",
+            "containerId": "7364e83e-5ee7-486e-bfb4-02fb433d17f6",
+            "name": "LIST DRINKS",
+            "url": "http://localhost:8000/drinks",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-16T03:33:07.298Z",
+            "modified": "2023-08-16T03:33:17.162Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3083ffc9-9fed-44dc-9ac3-f73e017a1ce9",
+            "colId": "e7a5fd06-1c27-49cd-b61c-6e03d26c97ec",
+            "containerId": "",
+            "name": "DOCS",
+            "url": "http://localhost:8000/docs",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-08-16T03:38:50.665Z",
+            "modified": "2023-08-16T03:38:57.912Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dc001b1d-e5d2-4f6e-93ea-8fc0bcba2a4a",
+            "colId": "e7a5fd06-1c27-49cd-b61c-6e03d26c97ec",
+            "containerId": "7364e83e-5ee7-486e-bfb4-02fb433d17f6",
+            "name": "CREATE DRINKS",
+            "url": "http://localhost:8000/drink",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-16T03:33:37.874Z",
+            "modified": "2023-08-16T03:35:35.652Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"1\",\n  \"name\": \"Mojito\",\n  \"description\": \"A refreshing Cuban cocktail\",\n  \"prepare_method\": \"Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.\",\n  \"ingredients\": [\n    {\n      \"id\": \"1\",\n      \"name\": \"Mint leaves\",\n      \"quantity\": 6,\n      \"prepare\": \"Muddle\",\n      \"description\": \"Fresh mint leaves\",\n      \"unit\": \"leaves\"\n    },\n    {\n      \"id\": \"2\",\n      \"name\": \"Sugar\",\n      \"quantity\": 2,\n      \"prepare\": \"Muddle\",\n      \"description\": \"White sugar\",\n      \"unit\": \"tsp\"\n    },\n    {\n      \"id\": \"3\",\n      \"name\": \"Lime juice\",\n      \"quantity\": 1,\n      \"prepare\": \"Muddle\",\n      \"description\": \"Fresh lime juice\",\n      \"unit\": \"oz\"\n    },\n    {\n      \"id\": \"4\",\n      \"name\": \"Soda water\",\n      \"quantity\": 1,\n      \"prepare\": \"Top\",\n      \"description\": \"Soda water\",\n      \"unit\": \"oz\"\n    },\n    {\n      \"id\": \"5\",\n      \"name\": \"White rum\",\n      \"quantity\": 2,\n      \"prepare\": \"Pour\",\n      \"description\": \"White rum\",\n      \"unit\": \"oz\"\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7808a0cd-6044-41a1-a15f-acacab313ee5",
+            "colId": "e7a5fd06-1c27-49cd-b61c-6e03d26c97ec",
+            "containerId": "7364e83e-5ee7-486e-bfb4-02fb433d17f6",
+            "name": "GET DRINK",
+            "url": "http://localhost:8000/drink/Z3wTuuf8iRzd3ekZpCx4f6",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-08-16T03:36:34.578Z",
+            "modified": "2023-08-16T03:36:53.461Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3ed7aa65-b964-4d00-8d37-42f66bb899f2",
+            "colId": "e7a5fd06-1c27-49cd-b61c-6e03d26c97ec",
+            "containerId": "7364e83e-5ee7-486e-bfb4-02fb433d17f6",
+            "name": "UPDATE DRINK",
+            "url": "http://localhost:8000/drink/Z3wTuuf8iRzd3ekZpCx4f6",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2023-08-16T03:37:04.529Z",
+            "modified": "2023-08-16T03:37:33.009Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Mojito\",\n  \"description\": \"A refreshing Cuban cocktail\",\n  \"prepare_method\": \"Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.\",\n  \"ingredients\": [\n    {\n      \"id\": \"1\",\n      \"name\": \"Mint leaves\",\n      \"quantity\": 6,\n      \"prepare\": \"Muddle\",\n      \"description\": \"Fresh mint leaves\",\n      \"unit\": \"leaves\"\n    },\n    {\n      \"id\": \"2\",\n      \"name\": \"Sugar\",\n      \"quantity\": 2,\n      \"prepare\": \"Muddle\",\n      \"description\": \"White sugar\",\n      \"unit\": \"tsp\"\n    },\n    {\n      \"id\": \"3\",\n      \"name\": \"Lime juice\",\n      \"quantity\": 1,\n      \"prepare\": \"Muddle\",\n      \"description\": \"Fresh lime juice\",\n      \"unit\": \"oz\"\n    },\n    {\n      \"id\": \"4\",\n      \"name\": \"Soda water\",\n      \"quantity\": 1,\n      \"prepare\": \"Top\",\n      \"description\": \"Soda water\",\n      \"unit\": \"oz\"\n    },\n    {\n      \"id\": \"5\",\n      \"name\": \"White rum\",\n      \"quantity\": 2,\n      \"prepare\": \"Pour\",\n      \"description\": \"White rum\",\n      \"unit\": \"oz\"\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "30a56d2a-0336-47cb-8d30-668985387628",
+            "colId": "e7a5fd06-1c27-49cd-b61c-6e03d26c97ec",
+            "containerId": "7364e83e-5ee7-486e-bfb4-02fb433d17f6",
+            "name": "DELETE DRINK",
+            "url": "http://localhost:8000/drink/Z3wTuuf8iRzd3ekZpCx4f6",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-08-16T03:38:26.617Z",
+            "modified": "2023-08-16T03:38:35.022Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
